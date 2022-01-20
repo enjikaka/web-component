@@ -1,0 +1,13 @@
+{
+  "extends": "tidal",
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "accessor-pairs": "off",
+    "valid-jsdoc": ["error", {
+      "requireParamDescription": false,
+      "requireReturnDescription": false
+    }]
+  }
+}

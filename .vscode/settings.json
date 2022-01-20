@@ -1,0 +1,12 @@
+{
+  "js/ts.implicitProjectConfig.checkJs": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript"
+  ],
+  "javascript.format.enable": false,
+  "js/ts.implicitProjectConfig.strictNullChecks": true,
+  "deno.enable": false
+}

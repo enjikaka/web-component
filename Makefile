@@ -1,5 +1,5 @@
 type_check:
-	npx tsc -p jsconfig.json
+	npx tsc --noEmit
 
 build: type_check
 	rm -rf pkg/

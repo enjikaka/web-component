@@ -6,7 +6,7 @@
   "scripts": {
     "build": "make build",
     "test": "npm-run-all lint:types lint:js",
-    "lint:types": "tsc --noEmit",
+    "lint:types": "tsc --project jsconfig.json --noEmit",
     "lint:js": "eslint src/*.js"
   },
   "repository": {

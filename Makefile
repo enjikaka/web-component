@@ -1,7 +1,7 @@
-type_check:
-	npx tsc --noEmit
+generate_types:
+	npx --yes tsc --project jsconfig.json --declaration --emitDeclarationOnly --declarationDir pkg/src
 
-build: type_check
+build: generate_types
 	rm -rf pkg/
 	npx esbuild src/index.js --bundle --minify --sourcemap --format=esm --platform=browser --target=es2020 --outfile=pkg/src/index.js
 	deno run --allow-read --allow-run --allow-write scripts/compile-package-json.js

@@ -1,5 +1,7 @@
 # Web Component Template
 
+[![Node.js CI](https://github.com/enjikaka/web-component/actions/workflows/main.yml/badge.svg)](https://github.com/enjikaka/web-component/actions/workflows/main.yml)
+
 A web component template project.
 
 Includes:

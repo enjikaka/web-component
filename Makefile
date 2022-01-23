@@ -1,8 +1,10 @@
+clean_pkg:
+	rm -rf pkg/
+
 generate_types:
 	npx --yes tsc --project jsconfig.json --declaration --emitDeclarationOnly --declarationDir pkg/src
 
-build: generate_types
-	rm -rf pkg/
+build: clean_pkg generate_types
 	npx esbuild src/index.js --bundle --minify --sourcemap --format=esm --platform=browser --target=es2020 --outfile=pkg/src/index.js
 	deno run --allow-read --allow-run --allow-write scripts/compile-package-json.js
 	cp README.md pkg/README.md

@@ -24,6 +24,13 @@ json.type = 'module';
 
 json.types = './index.d.ts';
 
+json.files = [
+  'src/index.js',
+  'src/index.map.js',
+  'src/index.d.ts',
+  'README.md'
+];
+
 if ('scripts' in json) {
   delete json.scripts;
 }

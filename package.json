@@ -9,6 +9,9 @@
     "lint:types": "tsc --project jsconfig.json --noEmit",
     "lint:js": "eslint src/*.js"
   },
+  "keywords": [
+    "web component"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/enjikaka/web-component.git"
